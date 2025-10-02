@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Informasi Bisnis</title>
+		<style>
+			:root {
+				--primary-color: #2563eb;
+				--secondary-color: #3b82f6;
+				--accent-color: #1d4ed8;
+				--text-color: #1f2937;
+				--light-color: #f9fafb;
+				--border-color: #e5e7eb;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+			body {
+				background-color: #f3f4f6;
+				color: var(--text-color);
+				line-height: 1.6;
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+
+			header {
+				background: linear-gradient(
+					135deg,
+					var(--primary-color),
+					var(--accent-color)
+				);
+				color: white;
+				padding: 2rem 0;
+				text-align: center;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			}
+
+			.logo {
+				font-size: 2rem;
+				font-weight: bold;
+				margin-bottom: 0.5rem;
+			}
+
+			.tagline {
+				font-size: 1.1rem;
+				opacity: 0.9;
+			}
+
+			main {
+				padding: 3rem 0;
+			}
+
+			.info-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 2rem;
+				margin-bottom: 3rem;
+			}
+
+			.info-card {
+				background: white;
+				border-radius: 10px;
+				padding: 2rem;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+
+			.info-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+			}
+
+			.card-header {
+				display: flex;
+				align-items: center;
+				margin-bottom: 1.5rem;
+			}
+
+			.icon {
+				width: 50px;
+				height: 50px;
+				background: var(--primary-color);
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: 1rem;
+				color: white;
+				font-size: 1.5rem;
+			}
+
+			.card-title {
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
+
+			.card-content {
+				font-size: 1.1rem;
+			}
+
+			.bank-account {
+				font-family: monospace;
+				font-size: 1.2rem;
+				background: var(--light-color);
+				padding: 0.5rem 1rem;
+				border-radius: 5px;
+				display: inline-block;
+				margin-top: 0.5rem;
+			}
+
+			.map-container {
+				height: 250px;
+				border-radius: 8px;
+				overflow: hidden;
+				margin-top: 1rem;
+			}
+
+			.map-container iframe {
+				width: 100%;
+				height: 100%;
+				border: none;
+			}
+
+			.phone-number {
+				font-size: 1.3rem;
+				font-weight: bold;
+				color: var(--primary-color);
+				margin-top: 0.5rem;
+				display: inline-block;
+			}
+
+			footer {
+				background: var(--text-color);
+				color: white;
+				text-align: center;
+				padding: 2rem 0;
+				margin-top: 2rem;
+			}
+
+			@media (max-width: 768px) {
+				.info-grid {
+					grid-template-columns: 1fr;
+				}
+
+				header {
+					padding: 1.5rem 0;
+				}
+
+				.logo {
+					font-size: 1.5rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<!-- <div class="container">
+				<div class="logo">Nama Perusahaan</div>
+				<div class="tagline">Informasi Kontak dan Lokasi</div>
+			</div> -->
+		</header>
+
+		<main>
+			<div class="container">
+				<div class="info-grid">
+					<div class="info-card">
+						<div class="card-header">
+							<div class="icon">$</div>
+							<h2 class="card-title">For Gift</h2>
+						</div>
+						<div class="card-content">
+							<p>Bank BCA</p>
+							<p>0941590305</p>
+						</div>
+					</div>
+
+					<div class="info-card">
+						<div class="card-header">
+							<div class="icon">📍</div>
+							<h2 class="card-title">Lokasi Kami</h2>
+						</div>
+						<div class="card-content">
+							<p>Jalan Contoh No. 123, Kota Contoh, 12345</p>
+							<div class="map-container">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!4v1759412389139!6m8!1m7!1sTTXiox2uD2kbGeXvk-dWkQ!2m2!1d-5.454209562722546!2d120.2718197222087!3f210.79!4f-9.340000000000003!5f0.4000000000000002"
+									width="600"
+									height="450"
+									style="border: 0"
+									allowfullscreen=""
+									loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+					</div>
+
+					<div class="info-card">
+						<div class="card-header">
+							<div class="icon">📞</div>
+							<h2 class="card-title">Kontak Kami</h2>
+						</div>
+						<div class="card-content">
+							<p>Kontak Person :</p>
+							<p>A.N Uya</p>
+							<a href="tel:+621234567890" class="phone-number">087766936314</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="container"></div>
+		</footer>
+	</body>
+</html>
